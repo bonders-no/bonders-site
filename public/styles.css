@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+body{margin:0;background:#f7f7f7;color:#181818}
+.wrap{width:min(1040px,92%);margin:auto}
+.hero{padding:72px 0;background:#fff;border-bottom:1px solid #ddd}
+.eyebrow{font-weight:700}
+h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1;margin:.15em 0}
+.lead{font-size:1.25rem;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.button{display:inline-block;border:1px solid #222;border-radius:10px;padding:12px 18px;text-decoration:none;color:#111;background:#fff;font:inherit;cursor:pointer}
+.button.primary{background:#111;color:#fff}
+main section{padding:50px 0;border-bottom:1px solid #ddd}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card,.prices,form{background:#fff;border:1px solid #ddd;border-radius:14px;padding:20px}
+.prices div{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid #eee}
+.prices div:last-child{border-bottom:0}
+form{display:grid;gap:14px;max-width:680px}
+label{display:grid;gap:6px;font-weight:600}
+input,textarea{width:100%;border:1px solid #bbb;border-radius:9px;padding:11px 12px;font:inherit}
+.check{grid-template-columns:auto 1fr;align-items:start;font-weight:400}
+.check input{width:auto;margin-top:5px}
+.small,.status{font-size:.92rem}
+.status{min-height:1.3em}
+footer{padding:28px 0}
+@media(max-width:560px){.prices div{display:grid}.hero{padding:50px 0}}

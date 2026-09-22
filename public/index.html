@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bonders Tjenester | Småjobber i Fredrikstad og Sarpsborg</title>
+  <meta name="description" content="Praktisk hjelp, montering, dører, listverk, møbler, demontering og småjobber i Fredrikstad, Sarpsborg og nærområdet.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Fredrikstad • Sarpsborg • Østfold</p>
+      <h1>Bonders Tjenester</h1>
+      <p class="lead">Praktisk hjelp, montering og småjobber – raskt og ryddig.</p>
+      <div class="actions">
+        <a class="button primary" href="#kontakt">Be om pris</a>
+        <a class="button" href="tel:+47XXXXXXXX">Ring meg</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Tjenester</h2>
+      <div class="grid">
+        <article class="card"><h3>Dører og listverk</h3><p>Montering av dørblad, karm, gerikter og mindre tilpasninger.</p></article>
+        <article class="card"><h3>Montering</h3><p>Møbler, hyller, gardinskinner, smartlås og annet praktisk arbeid.</p></article>
+        <article class="card"><h3>Små snekkerjobber</h3><p>Panel, lister, reparasjoner og ferdigstilling.</p></article>
+        <article class="card"><h3>Demontering</h3><p>Demontering og borttaking etter avtale.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Prisindikasjon</h2>
+      <p>Endelig pris avtales etter bilder eller befaring. Materialer kommer i tillegg.</p>
+      <div class="prices">
+        <div><strong>Dørblad i eksisterende karm</strong><span>fra 900 kr</span></div>
+        <div><strong>Småjobber / montering</strong><span>fra 550 kr/time</span></div>
+        <div><strong>Minimumsoppdrag</strong><span>avtales før start</span></div>
+      </div>
+      <p class="small">Prisene er veiledende og kan endres etter jobbens omfang og vanskelighetsgrad.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Be om pris</h2>
+      <p>Send kort beskrivelse og kontaktinformasjon. Bilder kan avtales etterpå.</p>
+
+      <form id="leadForm">
+        <label>Navn
+          <input name="name" required autocomplete="name">
+        </label>
+        <label>Telefon
+          <input name="phone" required autocomplete="tel">
+        </label>
+        <label>E-post
+          <input name="email" type="email" autocomplete="email">
+        </label>
+        <label>Område
+          <input name="area" placeholder="Fredrikstad, Sarpsborg ...">
+        </label>
+        <label>Hva trenger du hjelp med?
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="consent" required>
+          <span>Jeg samtykker til at opplysningene brukes for å svare på forespørselen.</span>
+        </label>
+
+        <button class="button primary" type="submit">Send forespørsel</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><p>© <span id="year"></span> Bonders Tjenester</p></div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
